@@ -1,0 +1,32 @@
+@import '../styles/variables';
+
+.title {
+  @include title-text;
+  @include text-vertical-spacing;
+}
+
+.content {
+  @include content-text;
+
+  * {
+    @include content-text;
+  }
+
+  strong {
+    font-weight: $bold;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @include content-title-text;
+  }
+
+  h2, h3, h4, h5, h6, p {
+    @include text-vertical-spacing;
+  }
+}
+
+.footerText {
+  font-size: 13px;
+  color: $main-light-color;
+  margin: ($default-spacing * 3) 0;
+}
