@@ -2,6 +2,7 @@
 title: 'Un día cualquiera'
 slug: 'un-dia-cualquiera'
 date: '2016-09-15T12:00:00.000Z'
+author: 'Victor Vila Ases'
 summary: "Suena el despertador. Doy un rápido vistazo y... ¡maldición! Ya son las 7:30, hoy volveré a llegar tarde. Aparto de un golpe las sábanas y me visto. Otra vez tengo los zapatos con los cordones abrochados, debo abandonar la afición a quitármelos de cualquier manera. El reloj marca ya las 7:40. En fin, hoy me marcho sin desayunar, ya me haré un café en la oficina."
 ---
 

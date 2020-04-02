@@ -2,6 +2,7 @@
 title: 'No te quitaré mucho tiempo'
 slug: 'no-te-quitare-mucho-tiempo'
 date: '2017-02-05T12:00:00.000Z'
+author: 'Victor Vila Ases'
 summary: "Sí, no voy a quitarte mucho tiempo. Solo un poquito. Solo te pido que te quedes hasta el final."
 ---
 

@@ -6,6 +6,7 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  author: string;
   content: string;
   summary: string;
 };
@@ -20,10 +21,10 @@ export const getPosts = (): BlogPost[] => {
     const fullPath = path.join(postsDirectory, fileName);
     const bytes = fs.readFileSync(fullPath, 'utf8');
     const {
-      data: { slug, title, date, summary },
+      data: { slug, title, date, author, summary },
       content,
     } = matter(bytes);
-    return { slug, title, date, content, summary };
+    return { slug, title, date, author, content, summary };
   });
 
   return posts;

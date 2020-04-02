@@ -9,7 +9,10 @@ type IndexProps = {
 };
 
 const Home: NextPage<IndexProps> = ({ posts }) => (
-  <Layout title="numen" description="">
+  <Layout
+    title="relateando"
+    description="Relateando es mi pequeño rincón de Internet donde como aficionado a la escritura demuestro al mundo lo poco que sé del tema."
+  >
     <PostList posts={posts} />
   </Layout>
 );

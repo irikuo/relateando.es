@@ -17,13 +17,17 @@ const PostListItem: React.FunctionComponent<PostListItemProps> = ({ post }) => (
       <time dateTime={post.date}>{format(new Date(post.date), 'd MMM yyyy')}</time>
     </p>
     <h2 className={styles.title}>
-      <Link href={`/post/${post.slug}`}>
+      <Link href={post.slug}>
         <a className={styles.title}>{post.title}</a>
       </Link>
     </h2>
-    <ReactMarkdown className={styles.content} source={post.summary} renderers={{ code: CodeBlock }} />
-    <Link href={`/post/${post.slug}`}>
-      <a className={styles.more}>Continue reading...</a>
+    <Link href={post.slug}>
+      <a className={styles.link}>
+        <ReactMarkdown className={styles.content} source={post.summary} renderers={{ code: CodeBlock }} />
+      </a>
+    </Link>
+    <Link href={post.slug}>
+      <a className={styles.more}>Continuar leyendo...</a>
     </Link>
   </article>
 );

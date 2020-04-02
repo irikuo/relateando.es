@@ -8,7 +8,7 @@ const Header: React.FunctionComponent = () => {
     <header className={styles.header}>
       <nav>
         <Link href="/">
-          <a className={styles.title}>numen</a>
+          <a className={styles.title}>relateando</a>
         </Link>
       </nav>
     </header>

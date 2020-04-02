@@ -20,6 +20,10 @@
   @include text-vertical-spacing;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .more {
   border: 1px solid $main-light-color;
   border-radius: 18px;
