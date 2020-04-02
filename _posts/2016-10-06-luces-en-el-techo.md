@@ -1,7 +1,7 @@
 ---
 title: 'Luces en el techo'
 slug: 'luces-en-el-techo'
-date: '2016-09-15T12:00:00.000Z'
+date: '2016-10-06T12:00:00.000Z'
 author: 'Victor Vila Ases'
 summary: "-- ¡Segundos fuera!
 

@@ -18,7 +18,7 @@ const Home: NextPage<IndexProps> = ({ posts }) => (
 );
 
 export const getStaticProps = (): { props: IndexProps } => {
-  const sortedPosts = getPosts().sort((a, b) => a.date.localeCompare(b.date));
+  const sortedPosts = getPosts().sort((a, b) => b.date.localeCompare(a.date));
   return { props: { posts: sortedPosts } };
 };
 
