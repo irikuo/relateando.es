@@ -1,12 +1,20 @@
 @import '../styles/variables';
 
 .post {
-  margin: 50px 0;
+  margin: $default-spacing 0;
+  padding: $default-spacing;
+  border-radius: $default-spacing;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: $active-background-color;
+  }
 }
 
 .date {
   font-size: 13px;
-  color: $main-light-color;
+  color: $text-color;
   @include text-vertical-spacing;
 }
 
@@ -25,10 +33,7 @@
 }
 
 .more {
-  border: 1px solid $main-light-color;
-  border-radius: 18px;
   font-size: 13px;
-  color: $main-light-color;
-  padding: 9px 20px;
+  color: $text-color;
   text-decoration: none;
 }

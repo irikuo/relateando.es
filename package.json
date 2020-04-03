@@ -1,5 +1,5 @@
 {
-  "name": "relateando.es",
+  "name": "Relateando",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^12.2.1",
     "sass": "^1.26.3",
-    "typeface-libre-franklin": "^0.0.75"
+    "typeface-pt-serif": "^0.0.72"
   },
   "devDependencies": {
     "@types/marked": "^0.7.3",
@@ -42,6 +42,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [ "eslint . --fix" ]
+    "*.{js,ts,tsx,jsx}": [
+      "eslint . --fix"
+    ]
   }
 }

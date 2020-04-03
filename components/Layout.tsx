@@ -13,8 +13,8 @@ const Layout: React.FunctionComponent<Props> = ({ title, description, children }
   return (
     <section className={styles.layout}>
       <Meta title={title} description={description} />
+      <Header />
       <main className={styles.content}>
-        <Header />
         {children}
         <footer className={styles.footer}></footer>
       </main>

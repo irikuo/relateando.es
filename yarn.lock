@@ -6200,10 +6200,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-libre-franklin@^0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-libre-franklin/-/typeface-libre-franklin-0.0.75.tgz#7b8a1cfaf3da9324b4f7cf5c58220fa440a7a998"
-  integrity sha512-bpX2YsybHkft0ewKAukZWgjOr3r7vQ9NG0jwGj9HGv1A3/wcuoafkv7pK5cGouAjLNqVuKIkdelgefdDhGg/fw==
+typeface-pt-serif@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-pt-serif/-/typeface-pt-serif-0.0.72.tgz#d8761c02a298bd0203e53a2028081b6f03246cd5"
+  integrity sha512-R/ZnbjL3H8mfeWrkYSU1fCk8TAsz+dyw+W5jnqlXXJPcsdu7sT/cGJGqx02zskaMeDCHwdNfTCORN8/NxN7x9w==
 
 typescript@^3.8.3:
   version "3.8.3"

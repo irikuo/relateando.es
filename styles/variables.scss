@@ -1,10 +1,27 @@
-$main-dark-color: #222;
-$main-light-color: #818181;
+$dark-color-6: lighten(#000, 6);
+$dark-color-17: lighten(#000, 17);
+$dark-color-28: lighten(#000, 28);
+$dark-color-39: lighten(#000, 39);
+$dark-color-50: lighten(#000, 50);
+$dark-color-61: lighten(#000, 61);
+$dark-color-72: lighten(#000, 72);
+$dark-color-83: lighten(#000, 83);
+$dark-color-94: lighten(#000, 94);
+$dark-color-98: lighten(#000, 98);
+
+$main-color: $dark-color-6;
+// $main-reverse-color: $dark-color-98;
+
+$text-color: $main-color;
+$text-color-active: $dark-color-50;
+
+$active-background-color: $dark-color-98;
 
 $light: 300;
 $normal: 400;
 $bold: 600;
 
+$content-width: 650px;
 $default-spacing: 20px;
 
 @mixin text-vertical-spacing {
@@ -14,7 +31,7 @@ $default-spacing: 20px;
 @mixin title-text {
   font-size: 36px;
   font-weight: $bold;
-  color: $main-dark-color;
+  color: $text-color;
   display: block;
   line-height: 1.2;
   text-decoration: none;
@@ -22,11 +39,11 @@ $default-spacing: 20px;
 
 @mixin content-text {
   font-size: 16px;
-  color: $main-light-color;
+  color: $text-color;
 }
 
 @mixin content-title-text {
   font-size: 24px;
   font-weight: $normal;
-  color: $main-dark-color;
+  color: $text-color;
 }

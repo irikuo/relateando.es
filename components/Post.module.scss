@@ -1,5 +1,10 @@
 @import '../styles/variables';
 
+.post {
+  margin-top: $default-spacing;
+  padding: $default-spacing;
+}
+
 .title {
   @include title-text;
   @include text-vertical-spacing;
@@ -25,8 +30,12 @@
   }
 }
 
+.footer {
+  text-align: right;
+}
+
 .footerText {
   font-size: 13px;
-  color: $main-light-color;
-  margin: ($default-spacing * 3) 0;
+  color: $text-color;
+  margin-top: $default-spacing * 2;
 }

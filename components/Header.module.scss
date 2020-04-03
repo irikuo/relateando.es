@@ -1,12 +1,23 @@
 @import '../styles/variables';
 
 .header {
-  padding: 50px 0;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  padding: $default-spacing 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: $bold;
-  color: $main-dark-color;
+  color: $dark-color-98;
   text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $text-color-active;
+  }
 }

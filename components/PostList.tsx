@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { format } from 'date-fns';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
 import { BlogPost } from '../utils/posts';
@@ -12,24 +11,25 @@ type PostListItemProps = {
 };
 
 const PostListItem: React.FunctionComponent<PostListItemProps> = ({ post }) => (
-  <article className={styles.post}>
-    <p className={styles.date}>
-      <time dateTime={post.date}>{format(new Date(post.date), 'd MMM yyyy')}</time>
-    </p>
-    <h2 className={styles.title}>
-      <Link href={post.slug}>
-        <a className={styles.title}>{post.title}</a>
-      </Link>
-    </h2>
+  <>
     <Link href={post.slug}>
-      <a className={styles.link}>
-        <ReactMarkdown className={styles.content} source={post.summary} renderers={{ code: CodeBlock }} />
-      </a>
+      <article className={styles.post}>
+        <h2 className={styles.title}>
+          <Link href={post.slug}>
+            <a className={styles.title}>{post.title}</a>
+          </Link>
+        </h2>
+        <Link href={post.slug}>
+          <a className={styles.link}>
+            <ReactMarkdown className={styles.content} source={post.summary} renderers={{ code: CodeBlock }} />
+          </a>
+        </Link>
+        <Link href={post.slug}>
+          <a className={styles.more}>Continuar leyendo...</a>
+        </Link>
+      </article>
     </Link>
-    <Link href={post.slug}>
-      <a className={styles.more}>Continuar leyendo...</a>
-    </Link>
-  </article>
+  </>
 );
 
 type PostListProps = {

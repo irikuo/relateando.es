@@ -17,26 +17,19 @@ export type PostProps = {
   content: string;
 };
 
-const Post: NextPage<PostProps> = ({ slug, title, date, author, content }) => {
+const Post: NextPage<PostProps> = ({ title, date, author, content }) => {
   return (
     <Layout title={title} description={title}>
       <article className={styles.post}>
-        <Link href={slug}>
-          <a className={styles.title}>
-            <h1 className={styles.title}>{title}</h1>
-          </a>
-        </Link>
+        <h1 className={styles.title}>{title}</h1>
         <ReactMarkdown className={styles.content} source={content} renderers={{ code: CodeBlock }} />
 
-        <footer className={styles.footerText}>
-          {`${author} publicó `}
-          <Link href={slug}>
-            <a className={styles.footerText}>{title}</a>
-          </Link>
-          {' el '}
+        <footer className={`${styles.footer} ${styles.footerText}`}>
+          {'Publicado en '}
           <time className={styles.footerText} dateTime={date}>
-            {format(new Date(date), 'PPP', { locale: es })}
+            {format(new Date(date), 'd MMM yyyy', { locale: es })}
           </time>
+          {` por ${author}`}
         </footer>
       </article>
     </Layout>

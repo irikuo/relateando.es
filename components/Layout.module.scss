@@ -1,13 +1,15 @@
+@import '../styles/variables';
+
 .layout {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
-  max-width: 640px;
-  width: 50%;
+  max-width: $content-width;
 }
 
 .footer {
-  // height: 50px;
+  height: $default-spacing;
 }

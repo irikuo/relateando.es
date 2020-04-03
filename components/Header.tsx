@@ -6,9 +6,9 @@ import styles from './Header.module.scss';
 const Header: React.FunctionComponent = () => {
   return (
     <header className={styles.header}>
-      <nav>
+      <nav className={styles.content}>
         <Link href="/">
-          <a className={styles.title}>relateando</a>
+          <a className={styles.title}>Relateando</a>
         </Link>
       </nav>
     </header>
