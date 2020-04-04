@@ -12,7 +12,11 @@ const Meta: React.FunctionComponent<Props> = ({ title, description }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <title>{title}</title>
-      <meta name="description" content={description}></meta>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:locale" content="es_ES" />
+      <meta property="og:type" content="website" />
     </Head>
   );
 };
