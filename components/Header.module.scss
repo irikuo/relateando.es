@@ -1,19 +1,20 @@
 @import '../styles/variables';
 
 .header {
-  background-color: $main-color;
+  background-color: $background-color;
   display: flex;
   justify-content: center;
   padding: $default-spacing 0;
   position: sticky;
   top: 0;
   width: 100%;
+  border-bottom: 1px solid $main-color;
 }
 
 .title {
   font-size: 24px;
   font-weight: $bold;
-  color: $dark-color-98;
+  color: $main-color;
   text-decoration: none;
 
   &:hover,
