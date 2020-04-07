@@ -17,6 +17,7 @@ const Meta: React.FunctionComponent<Props> = ({ title, description }) => {
       <meta property="og:description" content={description} />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="website" />
+      <link rel="icon" type="image/png" href="favicon.png" />
     </Head>
   );
 };
