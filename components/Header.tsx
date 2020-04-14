@@ -3,12 +3,16 @@ import Link from 'next/link';
 
 import styles from './Header.module.scss';
 
-const Header: React.FunctionComponent = () => {
+type Props = {
+  title: string;
+};
+
+const Header: React.FunctionComponent<Props> = ({ title }) => {
   return (
     <header className={styles.header}>
       <nav className={styles.content}>
         <Link href="/">
-          <a className={styles.title}>Relateando</a>
+          <a className={styles.title}>{title}</a>
         </Link>
       </nav>
     </header>
