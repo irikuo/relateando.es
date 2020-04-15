@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import { NextApiRequest, NextApiResponse } from 'next';
 import RSS from 'rss';
-import { getPosts } from '../../utils/posts';
 import { getConfig } from '../../utils/config';
+import { getPosts } from '../../utils/posts';
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default async (_: NextApiRequest, res: NextApiResponse) => {
-  res.setHeader('Content-type', 'application/rss+xml');
+export default async (_: NextApiRequest, res: NextApiResponse): Promise<void> => {
+  res.setHeader('Content-type', 'text/xml');
   res.setHeader('Cache-Control', 'maxage=0, s-maxage=600');
 
   const config = await getConfig();
