@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import CodeBlock from './CodeBlock';
-import { BlogPost } from '../utils/posts';
+import CodeBlock from 'components/CodeBlock';
+import { BlogPost } from 'utils/posts';
 
 import styles from './PostList.module.scss';
 

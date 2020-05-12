@@ -1,9 +1,9 @@
 import React from 'react';
 import { NextPage, GetStaticProps } from 'next';
-import { getPosts, BlogPost } from '../utils/posts';
-import Layout from '../components/Layout';
-import PostList from '../components/PostList';
-import { getConfig, Config } from '../utils/config';
+import { getPosts, BlogPost } from 'utils/posts';
+import Layout from 'components/Layout';
+import PostList from 'components/PostList';
+import { getConfig, Config } from 'utils/config';
 
 type IndexProps = {
   config: Config;

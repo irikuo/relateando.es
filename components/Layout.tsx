@@ -1,6 +1,6 @@
 import React from 'react';
-import Meta from './Meta';
-import Header from './Header';
+import Meta from 'components/Meta';
+import Header from 'components/Header';
 
 import styles from './Layout.module.scss';
 

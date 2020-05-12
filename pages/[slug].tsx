@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextPage, GetStaticPaths } from 'next';
-import { getPosts } from '../utils/posts';
-import Post, { PostProps } from '../components/Post';
+import { getPosts } from 'utils/posts';
+import Post, { PostProps } from 'components/Post';
 
 const PostPage: NextPage<PostProps> = (props) => {
   return <Post {...props} />;

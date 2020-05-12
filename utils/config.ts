@@ -6,6 +6,6 @@ export type Config = {
 };
 
 export const getConfig = async (): Promise<Config> => {
-  const config = await import(`../config.json`);
+  const config = await import(`config.json`);
   return config.default;
 };

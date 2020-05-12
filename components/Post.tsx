@@ -1,11 +1,10 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Link from 'next/link';
 import format from 'date-fns/format';
 import { es } from 'date-fns/locale';
 import ReactMarkdown from 'react-markdown';
-import CodeBlock from './CodeBlock';
-import Layout from './Layout';
+import CodeBlock from 'components/CodeBlock';
+import Layout from 'components/Layout';
 
 import styles from './Post.module.scss';
 
