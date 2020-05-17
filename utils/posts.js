@@ -1,17 +1,8 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import path from 'path';
+const fs = require('fs');
+const matter = require('gray-matter');
+const path = require('path');
 
-export type BlogPost = {
-  slug: string;
-  title: string;
-  date: string;
-  author: string;
-  content: string;
-  summary: string;
-};
-
-const getPostFromFile = (directory: string) => (fileName: string): BlogPost => {
+const getPostFromFile = (directory) => (fileName) => {
   const fullPath = path.join(directory, fileName);
   const bytes = fs.readFileSync(fullPath, 'utf8');
   const {
@@ -21,7 +12,7 @@ const getPostFromFile = (directory: string) => (fileName: string): BlogPost => {
   return { slug, title, date, author, content, summary };
 };
 
-export const getPosts = (): BlogPost[] => {
+const getPosts = () => {
   // Prepare posts off file system
   const postsDirectory = path.resolve(process.cwd(), '_posts');
   const postFiles = fs.readdirSync(postsDirectory);
@@ -36,3 +27,5 @@ export const getPosts = (): BlogPost[] => {
 
   // return [...drafts, ...posts];
 };
+
+exports.getPosts = getPosts;
