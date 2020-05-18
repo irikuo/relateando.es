@@ -4,11 +4,11 @@
   background-color: $background-color;
   display: flex;
   justify-content: center;
-  padding: $default-spacing 0;
+  padding: $default-spacing/2 0;
   position: sticky;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid $main-color;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
 }
 
 .title {
